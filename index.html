@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cashly - Financial Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="api.js"></script>
+</head>
+<body>
+  <header>
+    <img src="cashly.png" alt="Cashly Logo" class="logo">
+    
+    <!-- Bank Selector Tabs -->
+    <div class="bank-selector">
+      <span class="bank-option" data-bank="HSBC">HSBC</span>
+      <span class="bank-option selected" data-bank="Revolut">Revolut</span>
+      <span class="bank-option" data-bank="Barclays">Barclays</span>
+    </div>
+    
+    <!-- Independent Date Selector -->
+    <div class="date-selector">
+      <span class="date-option selected" data-date="9.24">9.24</span>
+      <span class="date-option" data-date="10.24">10.24</span>
+      <span class="date-option" data-date="11.24">11.24</span>
+    </div>
+    
+    <nav class="navbar">
+      <a href="#" class="nav-item">
+        <img src="icon1.png" alt="Profile Icon">
+      </a>
+      <a href="#" class="nav-item">
+        <img src="icon2.png" alt="Edit Icon">
+      </a>
+      <a href="#" class="nav-item">
+        <img src="icon3.png" alt="Document Icon">
+      </a>
+      <a href="#" class="nav-item">
+        <img src="icon4.png" alt="Checklist Icon">
+      </a>
+      <a href="#" class="nav-item">
+        <img src="icon5.png" alt="Settings Icon">
+      </a>
+    </nav>
+  </header>
+  
+  <div class="dashboard">
+    <div class="sidebar">
+      <div class="financial-info">
+        <p>Income</p>
+        <h2>$1500</h2>
+      </div>
+      <div class="financial-info">
+        <p>Expenses</p>
+        <h2>$500</h2>
+      </div>
+      <div class="financial-info">
+        <p>Cash Flow</p>
+        <h2>$1000</h2>
+      </div>
+    </div>
+
+    <div class="content">
+      <div class="notifications">
+        <button id="notify-btn">Notifications ✓</button>
+      </div>
+
+      <!-- Profit & Loss Section -->
+      <div class="section" id="profit-loss">
+        <h3>Profit & Loss</h3>
+        <div class="chart-icons">
+        </div>
+        <img src="profit-loss.png" alt="Profit & Loss Chart" class="section-image">
+      </div>
+
+      <!-- Balance Sheet Section -->
+      <div class="section" id="balance-sheet">
+        <h3>Balance Sheet</h3>
+        <img src="balance-sheet.png" alt="Balance Sheet Chart" class="section-image">
+      </div>
+
+      <!-- Goals Section -->
+      <div class="section" id="goals">
+        <h3>Goals</h3>
+        <div class="tabs">
+          <button id="targets-tab">Targets</button>
+          <button id="limits-tab">Limits</button>
+        </div>
+        <img src="goals-chart.png" alt="Goals Chart" class="section-image">
+      </div>
+
+      <!-- Expense Report -->
+      <div class="section" id="expense-report">
+        <h3>Expenses Report</h3>
+        <img src="expenses-report.png" alt="Expenses Report Chart" class="section-image">
+      </div>
+    </div>
+  </div>
+</body>
+</html>
